@@ -1,0 +1,97 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    outline: 0;
+}
+
+.nav {
+    margin-top: 0%;
+    width: 8rem;
+    height: 100vh;
+    background-color: rgb(0, 140, 255); 
+}
+
+.nav ol{
+    position: relative;
+}
+
+.nav li{
+    margin: 10px 0 0 10px;
+    list-style-type: none;
+    background-color:rgba(81, 81, 229, 1);
+    vertical-align: middle;
+}
+
+
+.nav li a{
+    text-decoration: none;    
+}
+
+.nav li a img{
+    height: 30px;
+}
+
+.nav-btn{
+    height: 4rem;
+    width: 5rem;
+    border-radius: 30px;
+    border: solid 1px;
+    left: 5%;
+}
+
+body .nav:hover{
+    width: 16rem;
+    transition: ease-in 0.25s;
+}
+
+body .nav:hover .nav-btn{
+    width: 13.5rem;
+    transition: ease-in;
+    
+}
+
+.nav-btn:hover{    
+    animation: navtrans 0.3s ease-in;
+    background: rgba(114, 237, 242, 1);
+}
+
+@keyframes navtrans {
+    from{
+        background: rgba(81, 81, 229, 1)
+    }
+    10%{
+        background: linear-gradient(to left, rgba(114, 237, 242, 0), rgba(81, 81, 229, 1));
+    }
+    25%{
+        background: linear-gradient(to left,rgba(114, 237, 242, 0.3), rgba(81, 81, 229, 0.7));
+    }
+    50% {
+        background: linear-gradient(to left,rgba(114, 237, 242, 0.5), rgba(81, 81, 229, 0.5));
+    }
+    75%{
+        background: linear-gradient(to left,rgba(114, 237, 242, 0.7), rgba(81, 81, 229, 0.3));
+    }
+    90% {
+        background: linear-gradient(to left,rgba(114, 237, 242, 1), rgba(81, 81, 229, 0));
+    }
+    to {
+        background: rgba(114, 237, 242, 1);
+    }
+}
+
+body .nav:hover span{
+    display: block;
+    color: #000;
+}
+
+.nav-btn span{
+    color: white;
+    display: none;
+}
+
+
+.nav-footer span a{
+    color: red;
+    text-decoration: none;
+}
