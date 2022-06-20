@@ -52,7 +52,7 @@ body .nav:hover .nav-btn{
 }
 
 .nav-btn:hover{    
-    animation: navtrans 0.3s ease-in;
+    animation: navtrans 0.3s ease-out;
     background: rgba(114, 237, 242, 1);
 }
 
